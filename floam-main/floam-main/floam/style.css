@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+header{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  height:50rem;
+  background-image: url(asset/landing\ page.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+/* nav bar */
+
+.logo-item{
+  width: 3rem;
+  height: 4rem;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding-top: 30px;
+}
+
+.ul{
+display: flex;
+gap: 3rem;
+}
+
+nav ul li a:hover{
+color: red;
+}
+
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+#closeHam{
+  display: none;
+}
+
+@media (max-width:780px) {
+
+  .hamburger{
+    display: block;
+  }
+  #closeHam{
+    position: absolute;
+    left: 85vw;
+    top: 44px;
+    cursor: pointer;
+  }
+
+  .ul{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      background-color: whitesmoke;
+      width: 100%;
+      height: calc(100vh - 58px);
+      padding-top: 60px;
+      gap: 10vh;
+      transition: 0.1s;
+  }
+  
+}
+ /* head main */
+.hearder-main{
+  margin-top: 9rem;
+  padding: 0 5rem;
+  color: whitesmoke;
+  font-size: x-large;
+}
+/* main */
+
+/* services */
+.services{
+  position: relative;
+  top: -3vh;
+  display: flex;
+  flex-direction: row;
+  gap: 8vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+.career{
+padding-top: 20px;
+}
+.career{
+  background-color: green;
+  border-radius: 1rem;
+  text-align: center;
+  flex: 0 0 250px;
+  box-shadow: 0px 20px 15px greenyellow;
+  height: 34vh;
+}
+.career p{
+  padding-top: 8px;
+}
+
+.bursary{
+  background-color: green;
+  border-radius: 1rem;
+  text-align: center;
+  flex: 0 0 250px;
+  box-shadow: 0px 20px 15px greenyellow;
+  height: 34vh;
+}
+.bursary-item{
+  padding-top: 20px;
+}
+.bursary p{
+  padding-top: 10px;
+}
+.counselling{
+  background-color: green;
+  border-radius: 1rem;
+  text-align: center;
+  flex: 0 0 250px;
+  box-shadow: 0px 20px 15px greenyellow;
+  height: 34vh;
+}
+.counselling-items{
+  padding-top: 20px;
+}
+.link{
+  margin-top: 8vh;
+  text-decoration: underline;
+  color: red;
+}
+.bus{
+  margin-top: 11vh;
+  text-decoration: underline;
+}
+.concs{
+  margin-top: 6vh;
+  text-decoration: underline;
+}
+
+/* testemonials */
+
+.Testemonials{
+  display: block;
+  width: 95vw;
+  height: 100vh;
+ background-color: rgba(152, 7, 7, 0.848);
+ color: whitesmoke;
+ text-align: center;
+ margin: 15px 0 0 0;
+}
+.Testemonials h1{
+  padding: 20px 0 40px 0 ;
+}
+.image{
+padding-bottom: 40px;
+}
+.img{
+  border-radius: 90vh ;
+}
+
+.Testemonials p{
+  padding-bottom: 30px;
+}
+
+.Testemonials h2{
+  padding-bottom: 30px;
+}
+
+.Testemonials a{
+  text-decoration: underline;
+  color: red;
+}
+/* aim */
+
+
+.aim-more{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10vw;
+  padding: 70px 0 20px 0 ;
+}
+
+
+.text{
+  padding-top: 10px;
+background-color: rgba(229, 187, 187, 0.829);
+border-radius: 60px;
+text-align: center;
+}
+
+.text2{
+  padding-bottom: 10px;
+background-color: rgba(229, 187, 187, 0.829);
+border-radius: 60px;
+text-align: center;
+}
+
+/* aim goals */
+
+.subscribe{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30vh;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-text{
+  margin: -40px 0 40px 0;
+  display: flex;
+ color: aliceblue;
+ justify-content: space-between;
+ gap: 2rem;
+ font-size: larger;
+}
+
+
+.search-bar input{
+  width: 20vw;
+  height: 5vh;
+  position: sticky;
+  color: aliceblue;
+  background-color: blue;
+  inline-size: none;
+}
+
+.search-bar button{
+  width: 5vw;
+  height: 5vh;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 7vw;
+  font-size: large;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+.map{
+  margin: 50px 0 90px 0;
+  text-align: center;
+}
+.map iframe{
+  width: 40vw;
+  height: 55vh;
+  padding: 0 0 40px 0;
+
+}
